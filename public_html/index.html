@@ -12,11 +12,15 @@ and open the template in the editor.
     </head>
     <body>
         <h1 id="intro">Welcome.</h1>
+        <input type="button" id="btn" value="press">
         <script>
-         var a = document.getElementById("intro");
+            
+         document.getElementById("btn").onclick=function()
+         {
+            var a=document.getElementById("btn");
+            a.value="thanks";
+         }
          
-        alert(a.innerHTML);
-        a.innerHTML="bye";    
         </script>
     </body>
 </html>
